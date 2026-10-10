@@ -1,0 +1,5 @@
+Resource,Data,Cohort_or_Task,Access,URL,Notes
+PPMI,MRI; DAT imaging; clinical; biomarkers; genetics; sensors,PD; prodromal; healthy controls; longitudinal,Controlled/registered,https://www.ppmi-info.org/access-data-specimens/download-data,Do not redistribute participant-level data.
+NINDS PDBP,Imaging; clinical; genetic; biomarker,PD and related disorders,Controlled/registered,https://pdbp.ninds.nih.gov/,Data Management Resource supports standardized queries and data access.
+OpenNeuro ds001907,Anatomical MRI; resting/task fMRI; DTI,25 healthy-aging + 21 PD; two sessions,Public BIDS,https://openneuro.org/datasets/ds001907/versions/3.2.0,Useful public dataset for reproducible prototyping and teaching.
+ENIGMA-PD,Structural MRI; DTI; fMRI; harmonized multicenter analyses,International PD collaboration,Consortium/collaborative,https://enigma.ini.usc.edu/ongoing/enigma-parkinsons/,Large-scale collaborative analyses; raw individual-level data are not simply an open download.

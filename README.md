@@ -3,7 +3,7 @@
 ## Companion repository for
 ### *Advances in Computational Neuroimaging for Parkinson’s Disease: Models, Multimodal Learning, Validation, and Clinical Translation*
 
-**Authors:** Muhammad Zubair and Malika Bendenchache  
+**Authors:** Muhammad Zubair and Malika Bendechache  
 **Manuscript year:** 2026  
 **Status:** Companion repository for the review manuscript. Add the final journal citation and DOI after publication.
 
@@ -18,6 +18,67 @@ This repository is designed as a practical companion to our state-of-the-art rev
 The repository provides readers with a concise roadmap of the review, curated PD neuroimaging data resources, software/tool links, representative studies, and lightweight reproducibility scripts for subject-level splitting and binary-classification evaluation.
 
 > **Clinical-use disclaimer:** This repository is for research and education. It is not a diagnostic device and does not provide clinical recommendations.
+
+---
+
+## 📚 Available Resources
+
+This repository collects practical resources that readers can use to move from the review article to hands-on Parkinson’s disease neuroimaging research. The tables below link directly to major datasets, software libraries, representative studies, and methodological resources discussed across the review.
+
+### 🧠 Public and research-access PD neuroimaging datasets
+
+| Dataset / Resource | Main modalities / data | Typical research use | Access model | Access link |
+|---|---|---|---|---|
+| **Parkinson’s Progression Markers Initiative (PPMI)** | MRI, DAT imaging, clinical data, biomarkers, genetics, digital/sensor data | PD vs control, prodromal PD, longitudinal progression, multimodal modelling | Registration + data-use agreement | [PPMI Data Access](https://www.ppmi-info.org/access-data-specimens/download-data) |
+| **NINDS Parkinson’s Disease Biomarkers Program (PDBP)** | MRI/DTI, clinical, genetic and biomarker data | Biomarker development, progression modelling, multimodal studies | Researcher account / controlled access | [PDBP Data Management Resource](https://pdbp.ninds.nih.gov/data-management-resource) |
+| **OpenNeuro ds001907** | Anatomical MRI, resting/task fMRI, DTI | Public PD neuroimaging experiments, BIDS workflows, reproducible analysis | Public download | [OpenNeuro ds001907](https://openneuro.org/datasets/ds001907) |
+| **ENIGMA-Parkinson’s Disease (ENIGMA-PD)** | Structural MRI, diffusion MRI, functional imaging and harmonized multicenter analyses | Large-scale multicenter neuroimaging, harmonization, disease staging, reproducibility | Consortium / collaborative access | [ENIGMA-PD](https://enigma.ini.usc.edu/ongoing/enigma-parkinsons/) |
+
+> **Note:** Controlled-access resources are not redistributed in this repository. Users should obtain the data from the original provider and follow the corresponding data-use agreement.
+
+### 🛠️ Open-source neuroimaging and computational tools
+
+| Tool | Main purpose | Typical role in PD neuroimaging | Access link |
+|---|---|---|---|
+| **BIDS / BIDS Validator** | Data organization and standardization | Reproducible MRI/fMRI/DTI data structure | [BIDS](https://bids.neuroimaging.io/) |
+| **NiBabel** | Neuroimaging file I/O | NIfTI loading, saving and manipulation | [NiBabel](https://nipy.org/nibabel/) |
+| **ANTs / ANTsPy** | Registration and normalization | Within-subject and template registration | [ANTs](https://github.com/ANTsX/ANTs) |
+| **FSL** | MRI/fMRI/diffusion processing | Brain extraction, registration, diffusion and functional analysis | [FSL](https://fsl.fmrib.ox.ac.uk/fsl/) |
+| **fMRIPrep** | Standardized fMRI preprocessing | Reproducible resting/task fMRI pipelines | [fMRIPrep](https://fmriprep.org/) |
+| **MRtrix3** | Diffusion MRI / tractography | DTI and white-matter connectivity analysis | [MRtrix3](https://www.mrtrix.org/) |
+| **DIPY** | Diffusion MRI analysis | Diffusion modelling and tractography in Python | [DIPY](https://dipy.org/) |
+| **Nilearn** | Statistical learning for neuroimaging | Functional connectivity and machine-learning analysis | [Nilearn](https://nilearn.github.io/stable/) |
+| **PyRadiomics** | Quantitative radiomics | Engineered MRI/PET/SPECT feature extraction | [PyRadiomics](https://pyradiomics.readthedocs.io/) |
+| **MONAI** | Medical-imaging deep learning | 3D CNN/Transformer pipelines and training utilities | [MONAI](https://monai.io/) |
+| **TorchIO** | 3D medical-image preprocessing and augmentation | Patch sampling, augmentation and volumetric transforms | [TorchIO](https://torchio.readthedocs.io/) |
+| **PyTorch Geometric** | Graph neural networks | Structural/functional/metabolic graph modelling | [PyG](https://pytorch-geometric.readthedocs.io/) |
+| **neuroCombat** | Multi-site harmonization | Scanner/site harmonization for neuroimaging features | [neuroCombat](https://github.com/Jfortin1/neuroCombat) |
+| **Captum** | Explainable AI for PyTorch | Integrated gradients, saliency and attribution | [Captum](https://captum.ai/) |
+| **SHAP** | Feature attribution | Interpreting radiomics, clinical and multimodal features | [SHAP](https://shap.readthedocs.io/) |
+
+### 📖 Representative computational PD neuroimaging studies
+
+| Study | Year | Imaging / data | Computational contribution | Main task | Article link |
+|---|---:|---|---|---|---|
+| **Camacho et al.** | 2023 | Multicenter T1 MRI | Explainable 3D CNN on Jacobian maps | PD vs healthy control | [DOI](https://doi.org/10.1016/j.nicl.2023.103405) |
+| **Camacho et al.** | 2024 | T1 + diffusion MRI | Macro-/microstructural multichannel 3D learning | PD vs healthy control | [DOI](https://doi.org/10.1038/s41531-024-00647-9) |
+| **Dzialas et al.** | 2024 | Neuroimaging AI literature | Systematic quality analysis of validation, leakage and bias | Methodological assessment | [DOI](https://doi.org/10.1002/mds.30002) |
+| **Suo et al.** | 2025 | Routine T1/T2/FLAIR MRI | Large self-supervised vision foundation model strategy | PD vs Parkinson-plus | [DOI](https://doi.org/10.1016/j.ebiom.2025.105773) |
+| **Ling et al.** | 2025 | FDG-PET | Explainable GNN with metabolic similarity networks | PD/MSA/PSP differentiation | [DOI](https://doi.org/10.3389/fnagi.2025.1580910) |
+| **Wu et al.** | 2025 | FDG-PET | CNN–Transformer with supervised contrastive learning | PD/MSA/PSP differentiation | [DOI](https://doi.org/10.1007/s12149-025-02081-0) |
+| **Vaillancourt et al. (AIDP)** | 2025 | Multicenter diffusion MRI | Prospective multicenter machine-learning differential diagnosis | PD/MSA/PSP differentiation | [DOI](https://doi.org/10.1001/jamaneurol.2025.0112) |
+| **Durand de Gevigney et al.** | 2026 | DAT-SPECT + quantitative features | Multimodal Transformer fusion, transfer learning and missing-input handling | Degenerative parkinsonism detection | [DOI](https://doi.org/10.1007/s10278-025-01831-w) |
+
+### ✅ Validation, reproducibility and translation resources
+
+| Resource | What it helps with | Repository / access link |
+|---|---|---|
+| **Subject-level split checking** | Detects train/validation/test leakage at participant level | [`scripts/check_subject_splits.py`](scripts/check_subject_splits.py) |
+| **Classification metrics** | Accuracy, sensitivity, specificity, F1, ROC-AUC, PR-AUC, Brier score and confusion matrix | [`scripts/classification_metrics.py`](scripts/classification_metrics.py) |
+| **Validation checklist** | Data splitting, harmonization, external testing, uncertainty and XAI checks | [`resources/validation-checklist.md`](resources/validation-checklist.md) |
+| **Paper roadmap** | Maps the six research questions to the review sections | [`resources/paper-roadmap.md`](resources/paper-roadmap.md) |
+| **Dataset catalogue** | Machine-readable summary of PD neuroimaging resources | [`data/dataset_catalog.csv`](data/dataset_catalog.csv) |
+| **Representative-study catalogue** | Machine-readable study list organized by modality, method and task | [`data/representative_studies.csv`](data/representative_studies.csv) |
 
 ---
 
@@ -65,38 +126,6 @@ A more detailed section-to-RQ map is available in [`resources/paper-roadmap.md`]
 ![Evidence hierarchy for clinical translation](assets/figure3_clinical_translation_evidence_hierarchy.png)
 
 > These figures were extracted from the authors' manuscript draft for use in this companion repository. After publication, verify the journal's figure-reuse policy before keeping manuscript figures in a public repository.
-
----
-
-## 📚 Data resources for PD neuroimaging
-
-| Resource | PD relevance | Modalities / data | Access |
-|---|---|---|---|
-| **PPMI** | Major longitudinal PD/prodromal research cohort | MRI, DAT imaging, clinical, biomarkers, genetics, sensor data | Registration + data-use agreement |
-| **NINDS PDBP** | PD and related-disorder research resource | Imaging, clinical, genetic and biomarker data | Researcher account / controlled access |
-| **OpenNeuro ds001907** | Public PD vs healthy-aging dataset | Anatomy, resting/task fMRI, DTI; repeated sessions | Public BIDS dataset |
-| **ENIGMA-PD** | Large international multicenter collaboration | Structural MRI, DTI, fMRI and harmonized analyses | Consortium/collaborative access |
-
-See [`resources/datasets.md`](resources/datasets.md) and [`data/dataset_catalog.csv`](data/dataset_catalog.csv) for details.
-
----
-
-## 🧰 Useful open-source tools
-
-The review spans several stages of the neuroimaging pipeline. We therefore curate tools by purpose rather than by model family:
-
-- **Data standards & I/O:** BIDS Validator, NiBabel, DataLad
-- **Registration / preprocessing:** ANTs, FSL, fMRIPrep
-- **Diffusion MRI:** MRtrix3, DIPY
-- **Functional MRI:** Nilearn
-- **Radiomics:** PyRadiomics
-- **Deep learning:** MONAI, TorchIO, PyTorch
-- **Graph learning:** PyTorch Geometric
-- **Harmonization:** neuroCombat / ComBat-based workflows
-- **Explainability:** Captum, SHAP
-- **Evaluation:** scikit-learn + repository scripts
-
-See [`resources/software-tools.md`](resources/software-tools.md).
 
 ---
 
@@ -150,16 +179,6 @@ These scripts are intentionally simple templates. They do **not** reproduce any 
 
 ---
 
-## 📊 Representative studies
-
-A machine-readable table of representative studies highlighted across the review is provided in:
-
-- [`data/representative_studies.csv`](data/representative_studies.csv)
-
-It is organized by modality, computational approach, clinical task, and the reason each study is methodologically relevant.
-
----
-
 ## 📑 Citation
 
 If you use this repository or its curated resources, please cite the associated review article. Until the final bibliographic record is available, use the following temporary citation and update it after publication:
@@ -167,7 +186,7 @@ If you use this repository or its curated resources, please cite the associated 
 ```bibtex
 @article{zubair2026pdneuroimaging,
   title   = {Advances in Computational Neuroimaging for Parkinson's Disease: Models, Multimodal Learning, Validation, and Clinical Translation},
-  author  = {Zubair, Muhammad and Bendenchache, Malika},
+  author  = {Zubair, Muhammad and Bendechache, Malika},
   year    = {2026},
   note    = {Review manuscript; update journal, volume, pages and DOI after publication}
 }

@@ -1,0 +1,27 @@
+Study,Year,Modality,Method,Task,Why_it_matters,Review_section
+Salvatore et al.,2014,T1 MRI,PCA + SVM,PD vs PSP vs HC,Early individual-level morphometric machine-learning pipeline,III
+Magesh et al.,2020,DAT-SPECT,VGG16 + LIME,PD vs non-PD,Early explicit XAI use in PD DAT-SPECT,VI
+Talai et al.,2021,T1/T2 MRI + DTI,Feature selection + conventional ML,PD vs PSP-RS vs HC,Shows multimodal input does not automatically outperform the strongest single modality,IV
+Nazari et al.,2021,DAT-SPECT,3D CNN + LRP,PD-related classification,Used explainability to investigate diagnostically useful extrastriatal signal,VI
+Pahuja and Prasad,2022,T1 MRI + SPECT + CSF,Deep multimodal fusion,PD vs HC,Representative early heterogeneous multimodal deep-learning framework,IV
+Cui et al.,2023,Structural MRI,Attention-enhanced CNN,PD vs HC,Attention-guided deep representation learning,III
+Camacho et al.,2023,T1 MRI,3D CNN on Jacobian maps + SmoothGrad,PD vs HC,Large multicenter explainable 3D MRI classification with independent evaluation,III; V; VI
+Souza et al.,2023,Multisite T1 MRI,Deep-learning bias analysis,PD classification / site prediction,Demonstrated shortcut learning from site/scanner information,V
+Li et al.,2023,Multimodal MRI,Dynamic graph network,PD diagnosis,Interpretable graph-learning approach for multimodal MRI,III; IV
+Camacho et al.,2024,T1 + diffusion MRI,Multichannel 3D CNN + SmoothGrad,PD vs HC,Links macro-/microstructural multimodal MRI with modality-specific attribution,III; IV; VI
+Wakasugi et al.,2024,DAT-SPECT,ComBat harmonization + classification,PD vs HC,Shows impact of multisite quantitative harmonization,V
+Dzialas et al.,2024,Neuroimaging AI literature,Systematic methodological review,Quality assessment,"Highlights leakage, class imbalance and limited external validation",V; VIII
+Veetil et al.,2024,T1 MRI,CNN + Grad-CAM,PD vs HC,Quantified performance inflation from slice/longitudinal leakage,V; VI
+Chen et al.,2024,Neuromelanin/QSM-derived MRI,Radiomics + deep features,Early PD,Biologically targeted substantia-nigra explainability with external-center validation,II; VI
+Suo et al.,2025,T1/T2/FLAIR MRI,Self-supervised Swin-based foundation strategy,PD vs Parkinson-plus,Large-scale routine-MRI pretraining and independent downstream evaluation,III; VII
+Wu et al.,2025,18F-FDG PET,CNN-Transformer + supervised contrastive learning,PD vs MSA vs PSP,Independent differential-diagnosis evaluation with interpretable PET patterns,III; VI; VII
+Mattia et al.,2025,T1 MRI + DTI,Bimodal 3D CNN,PD vs MSA,Multicenter clinically relevant differential diagnosis,IV; VII
+Vaillancourt et al.,2025,Diffusion MRI,AIDP machine-learning system,PD vs MSA vs PSP,Prospective 21-site translational evaluation with pathology comparison,VII
+Ling et al.,2025,18F-FDG PET,GNN + Transformer attention + GNNExplainer,IPD vs MSA vs PSP,Network-level metabolic explanation in large parkinsonism cohort,III; VI
+Basaia et al.,2025,T1 MRI + clinical,Multicenter 3D CNN + transfer learning,Diagnosis and progression,Extends imaging AI beyond cross-sectional classification,III; VII
+Shen et al.,2025,FDG PET → CFT PET,Cross-modality synthesis,PD diagnosis,Illustrates opportunities and limits of synthetic modality generation,IV; VIII
+Yue et al.,2026,Structural MRI + fMRI,CNN/Transformer + multi-scale cross-modal attention,Early PD,External-cohort structure–function multimodal evaluation,IV; V
+Durand de Gevigney et al.,2026,DAT-SPECT + age + striatal features,ViT + MLP + Transformer fusion + transfer learning,Degenerative parkinsonism detection,"Cross-device, missing-input and interpretable translational design",VI; VII
+Ozawa et al.,2026,DAT-SPECT,SuStaIn,PD subtyping and staging,Moves beyond diagnosis toward disease trajectories,III; VII
+Tian et al.,2026,QSM + MRS,Multimodal ML + SHAP,Early PD,Combines susceptibility/neurochemical information with interpretable ML,VI
+Liu et al.,2026,T1/T2 MRI,Radiomics + XGBoost + SHAP,PD vs SWEDD vs HC,Interpretable multiclass radiomics in a clinically relevant setting,VI

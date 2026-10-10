@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated review article. Update the citation metadata after publication."
+title: "PD Computational Neuroimaging Review Companion Repository"
+type: software
+authors:
+  - family-names: Zubair
+    given-names: Muhammad
+  - family-names: Bendenchache
+    given-names: Malika
+year: 2026
+preferred-citation:
+  type: article
+  title: "Advances in Computational Neuroimaging for Parkinson's Disease: Models, Multimodal Learning, Validation, and Clinical Translation"
+  authors:
+    - family-names: Zubair
+      given-names: Muhammad
+    - family-names: Bendenchache
+      given-names: Malika
+  year: 2026

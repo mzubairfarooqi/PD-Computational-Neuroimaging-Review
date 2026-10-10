@@ -111,23 +111,6 @@ A more detailed section-to-RQ map is available in [`resources/paper-roadmap.md`]
 
 ---
 
-## 🧭 Visual roadmap
-
-### 1. From neuroimaging signal to computational representation
-
-![Neuroimaging to computational representation](assets/figure1_neuroimaging_to_representation.png)
-
-### 2. Evolution of computational PD neuroimaging
-
-![Evolution of computational PD neuroimaging](assets/figure2_computational_evolution.png)
-
-### 3. Evidence hierarchy for clinical translation
-
-![Evidence hierarchy for clinical translation](assets/figure3_clinical_translation_evidence_hierarchy.png)
-
-> These figures were extracted from the authors' manuscript draft for use in this companion repository. After publication, verify the journal's figure-reuse policy before keeping manuscript figures in a public repository.
-
----
 
 ## ✅ Reproducibility and validation checklist
 
